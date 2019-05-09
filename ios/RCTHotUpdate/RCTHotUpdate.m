@@ -255,7 +255,7 @@ RCT_EXPORT_METHOD(reloadUpdate:(NSDictionary *)options)
         
         // reload
         dispatch_async(dispatch_get_main_queue(), ^{
-            [_bridge setValue:[[self class] bundleURL] forKey:@"bundleURL"];
+            // [_bridge setValue:[[self class] bundleURL] forKey:@"bundleURL"];
             [_bridge reload];
         });
     }
